@@ -1,0 +1,103 @@
+\documentclass[11pt]{article}
+\usepackage[english]{babel}
+%Includes "References" in the table of contents
+\usepackage[nottoc]{tocbibind}
+%\usepackage[square,numbers]{natbib}
+\usepackage{url}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{subfig}
+\usepackage{xfrac}
+\graphicspath{{images/}}
+\usepackage{parskip}
+\usepackage{fancyhdr}
+\usepackage{vmargin}
+\setmarginsrb{2 cm}{1 cm}{2 cm}{1 cm}{0.75 cm}{1.5 cm}{1 cm}{1.5 cm}
+\usepackage{float}
+\restylefloat{table}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{listings}
+\usepackage{amssymb}
+\definecolor{deepblue}{rgb}{0,0,0.5}
+\definecolor{deepred}{rgb}{0.6,0,0}
+\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+\lstset{numbers=left,
+numberstyle=\small, numbersep=8pt, frame = single, language=Python, framexleftmargin=15pt}
+
+
+% Python style for highlighting
+\newcommand\pythonstyle{\lstset{
+language=Python,
+basicstyle=\ttfamily\small, 
+otherkeywords={self},             % Add keywords here
+keywordstyle=\ttb\color{deepblue},
+emph={MyClass,__init__},          % Custom highlighting
+emphstyle=\ttb\color{deepred},    % Custom highlighting style
+stringstyle=\color{deepgreen},
+frame=tb, 
+breaklines=true,
+  postbreak=\mbox{\textcolor{red}{$\hookrightarrow$}\space},% Any extra options here
+showstringspaces=false            % 
+}}
+
+\title{EODA HW 01}								% Title
+\author{Ivan Colantoni, Federico Parente}
+
+\makeatletter
+\let\thetitle\@title
+\let\theauthor\@author
+\let\thedate\@date
+\makeatother
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\theauthor}
+\lhead{\thetitle}
+\cfoot{\thepage}
+
+\begin{document}
+%\bibliography{sample}{}
+%\bibliographystyle{plain}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{titlepage}
+\centering
+\vspace*{-2.5 cm}
+\includegraphics[scale = 0.40]{Sapienza-Logo-vettoriale.png}\\[0.8 cm]	% University Logo
+\textsc{\Large EARTH OBSERVATION DATA ANALYSIS}\\[0.5 cm]				% Course Code
+\rule{\linewidth}{0.2 mm} \\[0.4 cm]
+{ \huge \textbf{Remote Sensing of Vegetation from MODIS
+}}\\
+\rule{\linewidth}{0.2 mm} \\[1.5 cm]
+\vspace{0.5cm}
+
+\vspace{1cm}
+\textsc{\Large Ivan Colantoni}\\[0.5 cm]
+\textsc{\Large 1704031}\\[0.5 cm]
+\texttt{\Large colantoni.1704031@studenti.uniroma1.it}\\[0.5 cm]% Course Code
+\vspace{1cm}
+\textsc{\Large Federico Parente}\\[0.5 cm]
+\textsc{\Large 1716030}\\[0.5 cm]
+\texttt{\Large parente.1716030@studenti.uniroma1.it}\\[0.5 cm]% Course Code
+\end{titlepage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\tableofcontents
+\clearpage
+\section{Introduction}
+
+\subsection{The Code}
+
+\pythonstyle{}
+\begin{lstlisting}
+\end{lstlisting}
+\clearpage
+
+\bibliographystyle{plain}
+\bibliography{sample}
+
+
+
+\end{document}
